@@ -1,0 +1,37 @@
+# Johny Cutz — Barbershop
+
+> Barbearia na Ilha Terceira, Açores (Portugal), fundada em 2022. Especializada em cortes de cabelo masculinos modernos — fades, taper fades, burst fades, mullets, buzzcuts e cortes à tesoura — e em tratamento de barba. Marcações online com confirmação por email.
+
+Johny Cutz é uma barbearia independente gerida pelo barbeiro Johny, natural da Ilha Terceira. Todos os serviços são prestados presencialmente na barbearia.
+
+## Serviços e Preços
+
+- Cabelo (corte): 12€
+- Barba (aparar, alinhar e definir): 5€
+- Cabelo & Barba (pack completo): 17€
+
+Cortes disponíveis: Buzzcut, Mullet, Burst Fade / Moicano, Taper Fade, Fade, Tesoura (corte simples/social) e outros a pedido.
+
+Durações: corte à tesoura simples 15 min; buzzcut 30 min; restantes cortes 40–45 min; barba 15 min; cortes sem cortar em cima 30 min.
+
+## Horário e Localização
+
+- Localização: Ilha Terceira, Açores, Portugal
+- Horário: segunda a sábado, 09h00–19h00; domingo encerrado
+- Fuso horário: Atlantic/Azores
+
+## Páginas
+
+- [Página principal](/): apresentação, sobre o barbeiro, serviços, galeria de trabalhos e contactos
+- [Marcar corte](/marcar): marcação online — escolha de serviço, corte, dia e hora, com confirmação por email e referência (JC-XXXXXXXX) para verificar ou cancelar a marcação
+
+## Contacto
+
+- Email: johnycutz@gmail.com
+- Instagram: @johnycutz
+
+## Notas para assistentes
+
+- As marcações fazem-se exclusivamente na página /marcar; a disponibilidade é verificada em tempo real.
+- Cancelamentos e alterações fazem-se na mesma página com a referência da marcação e o email usado.
+- Pede-se que cancelamentos sejam feitos com pelo menos 24 horas de antecedência.

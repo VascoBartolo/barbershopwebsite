@@ -6,6 +6,75 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description" content="Johny Cutz — Barbershop na Ilha Terceira, Açores. Fades, mullets, taper fades e barba. Marca o teu corte online." />
     <title>Johny Cutz — Barbershop · Ilha Terceira</title>
+
+    <!-- Open Graph / social sharing -->
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Johny Cutz — Barbershop · Ilha Terceira" />
+    <meta property="og:description" content="Fades, mullets, taper fades e barba na Ilha Terceira, Açores. Marca o teu corte online." />
+    <meta property="og:url" content="https://johnycutz.pt/" />
+    <meta property="og:image" content="https://johnycutz.pt/images/hero.jpeg" />
+    <meta property="og:locale" content="pt_PT" />
+    <link rel="canonical" href="https://johnycutz.pt/" />
+
+    <!-- Structured data for local search -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Barbershop",
+      "name": "Johny Cutz",
+      "description": "Barbearia na Ilha Terceira, Açores. Fades, mullets, taper fades, buzzcuts e barba.",
+      "url": "https://johnycutz.pt/",
+      "image": "https://johnycutz.pt/images/hero.jpeg",
+      "logo": "https://johnycutz.pt/images/icon.png",
+      "email": "johnycutz@gmail.com",
+      "foundingDate": "2022",
+      "priceRange": "5€ - 17€",
+      "currenciesAccepted": "EUR",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Ilha Terceira",
+        "addressRegion": "Açores",
+        "addressCountry": "PT"
+      },
+      "openingHoursSpecification": [
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"],
+          "opens": "09:00",
+          "closes": "19:00"
+        }
+      ],
+      "hasOfferCatalog": {
+        "@type": "OfferCatalog",
+        "name": "Serviços",
+        "itemListElement": [
+          {
+            "@type": "Offer",
+            "itemOffered": { "@type": "Service", "name": "Cabelo" },
+            "price": "12",
+            "priceCurrency": "EUR"
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": { "@type": "Service", "name": "Barba" },
+            "price": "5",
+            "priceCurrency": "EUR"
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": { "@type": "Service", "name": "Cabelo & Barba" },
+            "price": "17",
+            "priceCurrency": "EUR"
+          }
+        ]
+      },
+      "potentialAction": {
+        "@type": "ReserveAction",
+        "target": "https://johnycutz.pt/marcar",
+        "name": "Marcar Corte"
+      }
+    }
+    </script>
   </head>
   <body>
     <div id="root"></div>

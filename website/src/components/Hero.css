@@ -152,12 +152,60 @@
 
   .hero-inner {
     grid-template-columns: 1fr;
-    gap: 56px;
-    padding: 130px 24px 72px;
+    gap: 32px;
+    padding: 96px 20px 64px;
   }
 
+  /* Full-width image below the text — the focus of the section on mobile */
   .hero-portrait {
-    justify-self: center;
-    width: min(320px, 86%);
+    justify-self: stretch;
+    width: 100%;
+  }
+
+  .hero-portrait::before {
+    display: none;
+  }
+
+  .hero-portrait-frame img {
+    aspect-ratio: 4 / 5;
+  }
+
+  .hero-portrait-badge {
+    top: auto;
+    bottom: 14px;
+    left: 14px;
+  }
+
+  /* Compact, centered text below the image */
+  .hero-text {
+    text-align: center;
+  }
+
+  .hero-location {
+    margin-bottom: 20px;
+    font-size: 0.72rem;
+    padding: 6px 14px;
+  }
+
+  .hero-tagline {
+    margin: 12px 0 0;
+  }
+
+  /* The long intro paragraph is desktop-only — keeps mobile image-focused */
+  .hero-sub {
+    display: none;
+  }
+
+  .hero-actions {
+    justify-content: center;
+    margin-top: 28px;
+    flex-wrap: nowrap;
+  }
+
+  .hero-actions .btn {
+    flex: 1;
+    padding: 14px 12px;
+    font-size: 0.82rem;
+    white-space: nowrap;
   }
 }
