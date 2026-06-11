@@ -1,0 +1,163 @@
+.hero {
+  position: relative;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background:
+    radial-gradient(ellipse at 75% 30%, rgba(43, 108, 184, 0.08), transparent 55%),
+    radial-gradient(ellipse at 15% 80%, rgba(200, 16, 46, 0.07), transparent 50%),
+    var(--black);
+  overflow: hidden;
+}
+
+.hero-inner {
+  max-width: 1140px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 140px 24px 80px;
+  display: grid;
+  grid-template-columns: 1.15fr 0.85fr;
+  gap: 64px;
+  align-items: center;
+}
+
+.hero-location {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-family: var(--font-display);
+  font-size: 0.8rem;
+  letter-spacing: 0.3em;
+  text-transform: uppercase;
+  color: var(--blue-light);
+  border: 1px solid rgba(74, 144, 217, 0.35);
+  padding: 8px 18px;
+  margin-bottom: 28px;
+}
+
+.hero-title {
+  font-family: var(--font-display);
+  font-size: clamp(3rem, 8vw, 5.5rem);
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  line-height: 1;
+  color: var(--white);
+}
+
+.hero-title-accent {
+  color: transparent;
+  -webkit-text-stroke: 2px var(--red);
+}
+
+.hero-tagline {
+  font-family: var(--font-display);
+  font-size: 1rem;
+  letter-spacing: 0.5em;
+  text-transform: uppercase;
+  color: var(--grey-light);
+  margin: 16px 0 22px;
+}
+
+.hero-sub {
+  max-width: 480px;
+  font-size: 1.05rem;
+  font-weight: 300;
+  color: var(--off-white);
+  margin-bottom: 40px;
+}
+
+.hero-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+
+/* ---- Portrait ---- */
+
+.hero-portrait {
+  position: relative;
+  justify-self: end;
+  width: min(380px, 100%);
+}
+
+.hero-portrait-frame {
+  position: relative;
+  overflow: hidden;
+  border: 1px solid var(--border);
+}
+
+/* Offset frame outline behind the photo */
+.hero-portrait::before {
+  content: '';
+  position: absolute;
+  inset: 18px -18px -18px 18px;
+  border: 1px solid var(--red);
+  z-index: 0;
+}
+
+.hero-portrait-frame {
+  z-index: 1;
+}
+
+.hero-portrait-frame img {
+  width: 100%;
+  aspect-ratio: 4 / 5;
+  object-fit: cover;
+  object-position: center 20%;
+  filter: grayscale(25%) contrast(1.05);
+  transition: filter 0.4s ease;
+}
+
+.hero-portrait:hover .hero-portrait-frame img {
+  filter: grayscale(0%) contrast(1.05);
+}
+
+.hero-portrait-badge {
+  position: absolute;
+  top: -14px;
+  left: -14px;
+  z-index: 2;
+  background: var(--blue);
+  color: var(--white);
+  font-family: var(--font-display);
+  font-size: 0.72rem;
+  font-weight: 500;
+  letter-spacing: 0.24em;
+  text-transform: uppercase;
+  padding: 7px 16px;
+}
+
+/* Barber pole stripe accent at the bottom */
+.hero-stripe {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 8px;
+  background: repeating-linear-gradient(
+    -45deg,
+    var(--red) 0 22px,
+    var(--white) 22px 44px,
+    var(--blue) 44px 66px,
+    var(--white) 66px 88px
+  );
+}
+
+@media (max-width: 880px) {
+  .hero {
+    min-height: auto;
+  }
+
+  .hero-inner {
+    grid-template-columns: 1fr;
+    gap: 56px;
+    padding: 130px 24px 72px;
+  }
+
+  .hero-portrait {
+    justify-self: center;
+    width: min(320px, 86%);
+  }
+}

@@ -1,0 +1,125 @@
+.services {
+  background: var(--black);
+}
+
+.services-header {
+  text-align: center;
+  margin-bottom: 56px;
+}
+
+.services-header .section-eyebrow::before {
+  display: none;
+}
+
+.services-sub {
+  color: var(--grey-light);
+  font-weight: 300;
+  max-width: 440px;
+  margin: 0 auto;
+}
+
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+}
+
+.service-card {
+  position: relative;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  padding: 40px 32px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 12px;
+  transition: transform 0.3s ease, border-color 0.3s ease, opacity 0.6s ease;
+  opacity: 0;
+  transform: translateY(24px);
+}
+
+.section-inner.visible .service-card {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.service-card:hover {
+  transform: translateY(-6px);
+  border-color: var(--grey);
+}
+
+.service-card.featured {
+  border-color: var(--red);
+  background: linear-gradient(160deg, var(--surface) 0%, #241317 100%);
+}
+
+.service-badge {
+  position: absolute;
+  top: -12px;
+  right: 20px;
+  background: var(--red);
+  color: var(--white);
+  font-family: var(--font-display);
+  font-size: 0.7rem;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  padding: 5px 14px;
+}
+
+.service-icon {
+  color: var(--blue-light);
+}
+
+.service-card h3 {
+  font-family: var(--font-display);
+  font-size: 1.25rem;
+  font-weight: 500;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--white);
+}
+
+.service-price {
+  font-family: var(--font-display);
+  font-size: 2.4rem;
+  font-weight: 700;
+  color: var(--white);
+  line-height: 1;
+}
+
+.service-card p {
+  color: var(--grey-light);
+  font-size: 0.92rem;
+  font-weight: 300;
+  flex-grow: 1;
+}
+
+.service-duration {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  color: var(--grey);
+  font-size: 0.85rem;
+}
+
+.service-cta {
+  font-family: var(--font-display);
+  font-size: 0.85rem;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--red);
+  margin-top: 8px;
+  transition: color 0.2s ease;
+}
+
+.service-cta:hover {
+  color: var(--white);
+}
+
+@media (max-width: 880px) {
+  .services-grid {
+    grid-template-columns: 1fr;
+    max-width: 460px;
+    margin: 0 auto;
+  }
+}
